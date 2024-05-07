@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myNumber = Number(prompt('what is the num'))
+      let sumNumbers = 0
+      let countNumbers = 0
+      while (myNumber > 0) {
+        sumNumbers = sumNumbers + myNumber
+        countNumbers = countNumbers + 1
+        console.log('sumNumbers', sumNumbers)
+        console.log('countNumbers', countNumbers)
+        myNumber = Number(prompt('what is the num'))
+      }
+      console.log('average is', sumNumbers / countNumbers)
+      console.log('!!!!! end of program')
+    </script>
+  </body>
+</html>
