@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let email = 'rangmailcom@'
+      let indexOfAt = email.indexOf('@') // 3
+      let indexOfDot = email.indexOf('.')
+      let indexOfCom = email.indexOf('com')
+      let indexOfNet = email.indexOf('net')
+      let indexOfOrg = email.indexOf('org')
+      
+      let isDotOrgNOTOK = (indexOfCom === -1 && indexOfNet === -1 && indexOfOrg === -1)
+      let isAtOK = indexOfAt > 0 && indexOfAt < email.length
+      let isDotOK = indexOfDot > indexOfAt
+      if (isAtOK && isDotOK) {
+        console.log('email is OK!')
+      } else {
+        console.log('email is NOT OK!')
+      }
+    </script>
+  </body>
+</html>

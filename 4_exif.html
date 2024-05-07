@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         אם יש שמש והטמפרטורה בין 20 ל-30 מעלות צלזיוס (כולל), התוכנית צריכה להדפיס: "זהו יום נהדר לצאת ב[עיר]!".
+      // אם אין שמש או שהטמפרטורה מתחת ל-20 מעלות צלזיוס, התוכנית צריכה להדפיס: "טוב יותר להישאר בפנים ב[עיר]".
+      // לתנאים אחרים, התוכנית צריכה להדפיס: "מצב מזג האוויר ב[עיר] הוא בינוני."
+      let cityName = prompt('please enter city')
+      let temp = Number(prompt('please enter Temp'))
+      let sunny = Boolean(prompt('please enter is sunny?'))
+
+      if (temp >= 20 && temp <= 30 && sunny === true) {
+        console.log('its good to be outside in', cityName)
+      } else if (sunny === false || temp < 20) {
+        console.log('its NOT a good day to be outside in', cityName)
+      } else {
+        console.log('its MEDIUM weather in', cityName)
+      }
+    </script>
+  </body>
+</html>
